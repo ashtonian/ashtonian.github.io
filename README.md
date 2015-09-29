@@ -12,3 +12,6 @@
 ** Fileify .js - GA?
 * Look into adjusting Disqus visuals. 
 * Fix about page. 
+* Icons need hint text on hover
+* Ancor 
+* Look into sans serif font for your title - j
