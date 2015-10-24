@@ -15,3 +15,4 @@
 * Icons need hint text on hover
 * Ancor 
 * Look into sans serif font for your title - j
+* update to static generator hugo. 
