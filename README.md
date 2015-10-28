@@ -14,5 +14,5 @@
 * Fix about page. 
 * Icons need hint text on hover
 * Ancor 
-* Look into sans serif font for your title - j
+* Look into sans serif font for your title
 * update to static generator hugo. 
