@@ -10,8 +10,10 @@ $(document).ready(function() {
       "I create things on the internet",
       "I'm a developer",
     ],
-    typeSpeed: 50,
+    typeSpeed: 40,
     startDelay: 50,
-    showCursor: false
+    showCursor: false,
+    backDelay: 200,
+    //backSpeed: 0,
   });
 });
