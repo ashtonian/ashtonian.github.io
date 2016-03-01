@@ -3,7 +3,7 @@ $(document).ready(function() {
     strings: [
       "I'm a developer",
       "I do web stuff",
-      "await Console.Out.WriteLineAsync( "C# is the bee's knees );",
+      "await Console.Out.WriteLineAsync( \"C# is the bee's knees );",
       "I use sql, a lot",
       "I play around with node",
       "I'm learning AngularJS + Ionic this year",
