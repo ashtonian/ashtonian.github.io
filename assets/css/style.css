@@ -1,0 +1,226 @@
+
+/* --------------------------------------------------------------
+/* =BASIS
+-------------------------------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+#page {
+  z-index: 4;
+  position: relative;
+  opacity: 1;
+  margin: 0 0 0 0;
+  background: #ffffff;
+  transition:all 1s ease 1s;
+  -webkit-transition:all 1s ease 1s;
+  -moz-transition:all 1s ease 1s;
+  -o-transition:all 1s ease 1s;
+}
+
+/* --------------------------------------------------------------
+/* =ESSENTIAL CLASSES
+-------------------------------------------------------------- */
+figure {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+.large-wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+.main-wrap {
+  padding: 0 0 70px 0;
+}
+
+/* --------------------------------------------------------------
+/* =TYPOGRAPHY
+-------------------------------------------------------------- */
+p {
+  color: #666666;
+  margin: 10px 0 23px 0;
+  font-size: 15px;
+  line-height: 180%;
+}
+p.medium {
+  font-size: 20px;
+}
+p.big {
+  font-size: 32px;
+  line-height: 140%;
+  margin: 5px 0 40px 0;
+  color: #333333;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: #888888;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+a:hover {
+  opacity: 0.7;
+}
+h4 {
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  color: #333333;
+}
+
+/* --------------------------------------------------------------
+/* =HEADER
+-------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+/* TOP RIGHT SITE NAV */
+.site-nav {
+  height: 30px;
+  margin: 5px 0;
+  float: right;
+  position: relative;
+}
+.site-nav a {
+  height: 30px;
+  display: inline-block;
+  margin: 0 0 0 30px;
+  line-height: 30px;
+  color: #999999;
+  font-size: 17px;
+  transition:all ease 0.6s;
+  -webkit-transition:all ease 0.6s;
+  -moz-transition:all ease 0.6s;
+  -o-transition:all ease 0.6s;
+}
+
+/* --------------------------------------------------------------
+/* =INTRO
+-------------------------------------------------------------- */
+section.intro {
+  padding: 100px 0 140px 0;
+}
+.headline {
+  font-size: 3em;
+  height: 60px;
+  line-height: 150%;
+  color: #333333;
+  margin: 0 0 40px 0;
+}
+
+/* --------------------------------------------------------------
+/* =RESPONSIVE / SCREEN UNDER 1200PX
+-------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  .large-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .opl { display: none; }
+}
+
+/* --------------------------------------------------------------
+/* =RESPONSIVE / SCREEN UNDER 600PX
+-------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+  #page {
+    margin: 0;
+  }
+  #backtotop {
+    display: none;
+  }
+  img.client {
+    width: 50%;
+    margin: 0;
+  }
+  p {
+    margin: 5px 0 13px 0;
+    font-size: 14px;
+    line-height: 170%;
+  }
+  p.big {
+    margin: 5px 0 20px 0;
+    font-size: 22px;
+  }
+  header {
+    padding: 20px 0;
+  }
+  section.content {
+    padding: 10px 0 20px 0;
+  }
+  .slick-dots {
+    padding: 15px 0 0 0;
+  }
+  .wrapper {
+    width: 88%;
+    margin: 0 6%;
+  }
+  .left-col {
+    float: left;
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  .site-infos h1.site-name {
+    font-size: 15px;
+  }
+  .right-col {
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+  section.design .box {
+    padding: 30px 0;
+    border-top: 1px solid #E8E8E8;
+  }
+  .headline {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .site-nav a {
+    margin: 0 0 0 15px;
+    font-size: 15px;
+  }
+  section.intro {
+    padding: 20px 0;
+  }
+  .main-wrap {
+    padding: 0 0 20px 0;
+  }
+  img.client {
+    margin: 10px 0 0 0;
+  }
+  footer {
+    padding: 0 0 30px 0;
+    text-align: left;
+  }
+  .footer-col {
+    width: 100%;
+    padding: 0;
+  }
+  section.images .half-width-1 {
+    width: 100%;
+    margin: 0;
+  }
+  section.images .full-width {
+    width: 100%;
+    margin: 0;
+  }
+  section.images .half-width-2 {
+    width: 100%;
+    margin: 0;
+  }
+}
