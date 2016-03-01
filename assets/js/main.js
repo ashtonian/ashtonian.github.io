@@ -14,6 +14,5 @@ $(document).ready(function() {
     startDelay: 50,
     showCursor: false,
     backDelay: 400,
-    //backSpeed: 0,
   });
 });
