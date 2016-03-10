@@ -1,0 +1,11 @@
+# Site settings
+title: Ashton Kinslow - Developer
+email: hello@ashtonkinslow.com
+description: Look at me I'm Mr.Meeseeks! Also a developer.
+baseurl: ""
+url: "www.ashtonkinslow.com"
+
+github_username:  Ashtonian
+linkedin_username: ashtonk
+
+permalinks: pretty

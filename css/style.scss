@@ -1,17 +1,23 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "normalize";
 
 /* --------------------------------------------------------------
 /* =BASIS
 -------------------------------------------------------------- */
-* {
+*, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
 body {
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 #page {
   z-index: 4;
@@ -223,5 +229,15 @@ section.intro {
   section.images .half-width-2 {
     width: 100%;
     margin: 0;
+  }
+}
+
+.social-link {
+  width: 16px;
+  height: 16px;
+  color: #999;
+
+  svg {
+    fill: currentColor;
   }
 }
