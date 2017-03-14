@@ -5,10 +5,10 @@ $(document).ready(function() {
       "I do backend stuff",
       "I love Node.js", 
       "I'm learning React and Meteor",
-      "I create things on the internet",
-      "I'm a developer",
       "C# is my bread and butter",
-      "I use sql, a lot"
+      "I use sql, a lot",
+      "I create things on the internet",
+      "I'm a developer"
     ],
     typeSpeed: 35,
     startDelay: 50,
