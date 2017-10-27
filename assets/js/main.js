@@ -5,7 +5,7 @@ $(document).ready(function() {
       "I mainly do backend stuff",
       "I love Node.js", 
       "I'm learning React and Meteor",
-      "C# is my bread and butter",
+      "Go is my bread and butter",
       "I use sql, a lot",
       "I create things on the internet",
       "I'm a developer"
