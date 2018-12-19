@@ -15,3 +15,4 @@ Blog Topics:
 * ts data 
 * kb blue conversion 
 * emoticon pluggin  
+* why windows sucks - including "you must setup a pin to continue - we think you'll like it" 
