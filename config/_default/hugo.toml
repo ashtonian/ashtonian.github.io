@@ -54,3 +54,7 @@ enableRobotsTXT = true
 
 [minify]
   minifyOutput = true
+
+# Keeps the <!--email_off--> markers in the footer; the templates emit no other HTML comments.
+[minify.tdewolff.html]
+  keepComments = true

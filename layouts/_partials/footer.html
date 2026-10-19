@@ -1,6 +1,8 @@
 <footer class="wrap site-footer">
   <p class="contact">
-    <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+    {{- /* email_off stops Cloudflare's Email Obfuscation from swapping the address
+           for "[email protected]" plus a decoding script. */}}
+    {{ "<!--email_off-->" | safeHTML }}<a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>{{ "<!--/email_off-->" | safeHTML }}
     <a href="{{ site.Params.github }}">GitHub</a>
     <a href="{{ site.Params.linkedin }}">LinkedIn</a>
   </p>
