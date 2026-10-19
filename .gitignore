@@ -1,1 +1,7 @@
-*.DS_Store
+/public/
+/public-artifact/
+/resources/_gen/
+/.hugo_build.lock
+
+# Repositories left out of data/upstream.json for privacy; never committed.
+/.upstream-exclude

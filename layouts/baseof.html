@@ -1,0 +1,23 @@
+{{- /* The artifact preview wraps its root page in its own document, so that one
+       page is emitted as a fragment; every other page is a full document. */ -}}
+{{- $fragment := and (eq hugo.Environment "artifact") .IsHome -}}
+{{- if $fragment }}
+{{ partial "head-fragment.html" . }}
+{{- else -}}
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{- end }}
+<a class="skip" href="#main">Skip to content</a>
+{{ partial "header.html" . }}
+<main id="main" class="wrap">
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{- if not $fragment }}
+</body>
+</html>
+{{- end }}

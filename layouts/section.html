@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="case-head">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+</section>
+<section>
+  {{ partial "work-list.html" . }}
+</section>
+{{ end }}

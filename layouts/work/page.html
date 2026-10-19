@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="case">
+  <header class="case-head">
+    <p class="crumb"><a href="{{ .Parent.RelPermalink }}">Work</a></p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+    {{ with .Params.facts }}
+    <dl class="facts">
+      {{ range . }}
+      <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+      {{ end }}
+    </dl>
+    <p class="asof">As of {{ time.Format "2 January 2006" site.Params.figuresAsOf }}.{{ with $.Params.repo }} Source: <a class="repo" href="{{ . }}">{{ strings.TrimPrefix "https://" . }}</a>{{ end }}</p>
+    {{ end }}
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+
+{{- /* Neighbours by position in weight order; Hugo's Prev/Next run the other way. */ -}}
+{{ $pages := .Parent.Pages.ByWeight }}
+{{ $prev := false }}
+{{ $next := false }}
+{{ range $i, $p := $pages }}
+  {{ if eq $p $ }}
+    {{ if gt $i 0 }}{{ $prev = index $pages (sub $i 1) }}{{ end }}
+    {{ if lt (add $i 1) (len $pages) }}{{ $next = index $pages (add $i 1) }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if or $prev $next }}
+<nav class="pager" aria-label="Case studies">
+  {{ with $prev }}<a class="prev" href="{{ .RelPermalink }}"><span class="dir">Previous</span>{{ .Title }}</a>{{ end }}
+  {{ with $next }}<a class="next" href="{{ .RelPermalink }}"><span class="dir">Next</span>{{ .Title }}</a>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

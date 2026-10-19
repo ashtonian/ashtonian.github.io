@@ -1,0 +1,5 @@
+{{- /* The artifact host has no directory index, so home must be named explicitly there. */ -}}
+{{- if eq hugo.Environment "artifact" }}
+  {{- return "/index.html" }}
+{{- end }}
+{{- return site.Home.RelPermalink }}

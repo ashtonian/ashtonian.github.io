@@ -1,0 +1,7 @@
+{{- /* {{< upstream repo="owner/name" >}}: that project's shown merged pull requests. */ -}}
+{{- $repo := .Get "repo" }}
+{{- $match := where (partial "upstream-projects.html" .Page) "repo" $repo }}
+{{- if not $match }}
+  {{- errorf "upstream shortcode: %q has no shown pull requests in data/upstream.json (%s)" $repo .Position }}
+{{- end }}
+{{- partial "pr-list.html" (index $match 0).prs }}

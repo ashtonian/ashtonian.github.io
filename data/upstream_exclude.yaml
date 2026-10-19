@@ -1,0 +1,22 @@
+# Merged pull requests kept out of the site, matched by URL.
+# Rule: show engineering changes. Leave out list entries, typo fixes, docs- or
+# example-only edits, repository housekeeping and dependency upgrades.
+# Privacy exclusions (whole repos) happen earlier, when data/upstream.json is generated.
+- url: https://github.com/awesome-mqtt/awesome-mqtt/pull/171
+  reason: list entry for mqttv5
+- url: https://github.com/emqx/emqtt-bench/pull/271
+  reason: typo fix
+- url: https://github.com/StubbleOrg/Stubble/pull/71
+  reason: docs only
+- url: https://github.com/josmo/drone-rancher/pull/39
+  reason: README one-liner
+- url: https://github.com/go-playground/validator/pull/358
+  reason: example code only
+- url: https://github.com/BeeInventor/charts/pull/13
+  reason: .gitignore
+- url: https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/14
+  reason: chart version bump
+- url: https://github.com/sfreiberg/gotwilio/pull/99
+  reason: CI workflow scaffold
+- url: https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/542
+  reason: dependency upgrade, almost all vendored code

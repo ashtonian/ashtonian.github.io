@@ -1,0 +1,8 @@
+# Preview build for hosts that serve plain files with no directory index
+# (`make preview`, used for private previews). Every link must name an .html
+# file and be relative.
+baseURL = "/"
+relativeURLs = true
+uglyURLs = true
+enableRobotsTXT = false
+disableKinds = ["taxonomy", "term", "rss", "sitemap", "robotstxt", "404"]

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="intro">
+  <h1>{{ .Params.lede }}</h1>
+  <p class="meta">{{ site.Params.location }}</p>
+</section>
+
+{{ with site.GetPage "/work" }}
+<section aria-labelledby="work-heading">
+  <h2 id="work-heading" class="label">Selected work</h2>
+  {{ partial "work-list.html" . }}
+</section>
+{{ end }}
+
+{{ with .Params.principles }}
+<section aria-labelledby="how-heading">
+  <h2 id="how-heading" class="label">How I work</h2>
+  <ul class="principles">
+    {{ range . }}
+    <li>
+      <span>{{ .text }}</span>
+      {{ with .evidence }}
+      <span class="evidence">
+        {{- range $i, $e := . }}
+          {{- if $i }}, {{ end }}
+          {{- with $e.page }}
+            {{- with site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ errorf "home principles: no page at %q" $e.page }}{{ end }}
+          {{- else }}<a href="{{ $e.url }}">{{ $e.name }}</a>
+          {{- end }}
+        {{- end -}}
+      </span>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ with site.GetPage "/open-source" }}
+{{ $total := partial "upstream-total.html" . }}
+{{ $names := slice }}
+{{ range first 4 (partial "upstream-projects.html" .) }}
+  {{ $names = $names | append (index (split .repo "/") 1) }}
+{{ end }}
+<section aria-labelledby="oss-heading">
+  <h2 id="oss-heading" class="label">Open source</h2>
+  <p class="oss-lede"><span class="num">{{ $total.prs }}</span> merged pull requests across {{ $total.projects }} projects, including {{ delimit $names ", " ", and " }}.</p>
+  <p class="more"><a href="{{ .RelPermalink }}">All contributions</a></p>
+</section>
+{{ end }}
+
+{{ with .Params.also }}
+<section aria-labelledby="also-heading">
+  <h2 id="also-heading" class="label">Also built</h2>
+  <ul class="also">
+    {{ range . }}
+    <li><a href="{{ .url }}">{{ .name }}</a> <span>{{ .text }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+{{ end }}

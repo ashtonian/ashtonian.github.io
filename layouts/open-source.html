@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $total := partial "upstream-total.html" . }}
+<header class="case-head">
+  <h1>{{ .Title }}</h1>
+  <p class="lead">{{ $total.prs }} merged pull requests across {{ $total.projects }} projects, most-used first.</p>
+</header>
+
+<section class="projects" aria-label="Contributions by project">
+  {{ range partial "upstream-projects.html" . }}
+  <div class="project">
+    <div class="project-head">
+      <a href="{{ .url }}">{{ .repo }}</a>
+      <span class="stars">{{ lang.FormatNumberCustom 0 .stars }} stars</span>
+    </div>
+    {{- /* GitHub descriptions often carry emoji shortcodes such as :100:. */ -}}
+    {{ with .description | replaceRE `:[a-z0-9_+-]+:` "" | strings.TrimSpace }}<p>{{ . }}</p>{{ end }}
+    {{ partial "pr-list.html" .prs }}
+  </div>
+  {{ end }}
+</section>
+
+<p class="source-note">From GitHub on {{ time.Format "2 January 2006" hugo.Data.upstream.generated }}: public pull requests merged into projects outside my own account. List entries, typo and docs-only fixes, housekeeping and dependency upgrades are left out.</p>
+{{ end }}

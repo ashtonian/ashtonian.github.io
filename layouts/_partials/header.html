@@ -1,0 +1,10 @@
+<header class="wrap site-header">
+  <a class="name" href="{{ partial "home-href.html" . }}">{{ site.Title }}</a>
+  <nav class="site-nav" aria-label="Main">
+    {{- $page := . }}
+    {{- range site.Menus.main }}
+    {{- $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+    <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{- end }}
+  </nav>
+</header>

@@ -1,0 +1,19 @@
+{{- /* Context: the work section page. One row per case study: words on the left, the figure that backs them on the right. */ -}}
+<ol class="work">
+  {{- range .Pages.ByWeight }}
+  <li>
+    <a class="work-row" href="{{ .RelPermalink }}">
+      <div class="work-text">
+        <span class="work-name">{{ .Title }}</span>
+        <span class="work-sum">{{ .Params.tagline }}</span>
+      </div>
+      {{- with .Params.headline }}
+      <div class="figure">
+        <span class="figure-value">{{ .value }}</span>
+        <span class="figure-label">{{ .label }}</span>
+      </div>
+      {{- end }}
+    </a>
+  </li>
+  {{- end }}
+</ol>

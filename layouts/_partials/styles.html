@@ -1,0 +1,4 @@
+{{- /* Inlined: the whole stylesheet is a few KB, so a separate request would cost more than it saves. */ -}}
+{{- $fonts := resources.Get "css/fonts.css" | resources.ExecuteAsTemplate "css/fonts.gen.css" . -}}
+{{- $css := slice $fonts (resources.Get "css/site.css") | resources.Concat "css/all.css" | minify -}}
+<style>{{ $css.Content | safeCSS }}</style>

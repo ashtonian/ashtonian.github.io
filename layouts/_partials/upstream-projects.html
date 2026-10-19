@@ -1,0 +1,15 @@
+{{- /* The one place that applies data/upstream_exclude.yaml: returns the projects
+       from data/upstream.json with excluded PRs removed and emptied projects dropped.
+       Every list and total on the site reads from this. */ -}}
+{{- $excluded := slice }}
+{{- range hugo.Data.upstream_exclude }}
+  {{- $excluded = $excluded | append .url }}
+{{- end }}
+{{- $projects := slice }}
+{{- range hugo.Data.upstream.projects }}
+  {{- $prs := where .prs "url" "not in" $excluded }}
+  {{- if $prs }}
+    {{- $projects = $projects | append (merge . (dict "prs" $prs)) }}
+  {{- end }}
+{{- end }}
+{{- return $projects }}

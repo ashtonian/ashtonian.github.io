@@ -1,0 +1,56 @@
+baseURL = "https://www.ashtonkinslow.com/"
+locale = "en-US"
+title = "Ashton Kinslow"
+disableKinds = ["taxonomy", "term", "rss"]
+enableRobotsTXT = true
+
+[module.hugoVersion]
+  min = "0.146.0"
+
+[params]
+  description = "Go engineer building messaging systems, infrastructure automation and developer tooling."
+  location = "Austin, Texas"
+  email = "hello@ashtonkinslow.com"
+  github = "https://github.com/ashtonian"
+  linkedin = "https://www.linkedin.com/in/ashtonkinslow"
+  figuresAsOf = "2026-10-19"
+
+  # Latin subsets from Fontsource (@fontsource-variable/ibm-plex-sans 5.3.0,
+  # @fontsource/ibm-plex-mono 5.3.0), SIL OFL 1.1: assets/fonts/OFL.txt.
+  [[params.fonts]]
+    family = "IBM Plex Sans"
+    file = "fonts/ibm-plex-sans-latin-wght-normal.woff2"
+    weight = "100 700"
+    preload = true
+  [[params.fonts]]
+    family = "IBM Plex Mono"
+    file = "fonts/ibm-plex-mono-latin-400-normal.woff2"
+    weight = "400"
+  [[params.fonts]]
+    family = "IBM Plex Mono"
+    file = "fonts/ibm-plex-mono-latin-500-normal.woff2"
+    weight = "500"
+
+[[menus.main]]
+  name = "Work"
+  pageRef = "/work"
+  weight = 10
+
+[[menus.main]]
+  name = "Open source"
+  pageRef = "/open-source"
+  weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.goldmark.parser.attribute]
+  block = true
+
+# Class-based output with no Chroma stylesheet: code stays in the page's own
+# colours, so it follows the light and dark themes.
+[markup.highlight]
+  noClasses = false
+
+[minify]
+  minifyOutput = true

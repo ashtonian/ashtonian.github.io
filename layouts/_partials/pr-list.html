@@ -1,0 +1,6 @@
+{{- /* Context: a slice of {title, url, merged}. */ -}}
+<ul class="prs">
+  {{- range . }}
+  <li><a href="{{ .url }}">{{ .title | markdownify }}</a><time datetime="{{ .merged }}">{{ time.Format "Jan 2006" .merged }}</time></li>
+  {{- end }}
+</ul>

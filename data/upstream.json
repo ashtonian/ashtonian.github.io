@@ -1,0 +1,439 @@
+{
+  "generated": "2026-10-19",
+  "source": "GitHub search: public pull requests by ashtonian merged into repositories outside that account",
+  "projects": [
+    {
+      "description": ":100:Go Struct and Field validation, including Cross Field, Cross Struct, Map, Slice and Array diving",
+      "repo": "go-playground/validator",
+      "stars": 20206,
+      "url": "https://github.com/go-playground/validator",
+      "prs": [
+        {
+          "title": "add missing `Engine()` to default validator for gin override example",
+          "url": "https://github.com/go-playground/validator/pull/358",
+          "merged": "2018-05-05"
+        }
+      ]
+    },
+    {
+      "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
+      "repo": "influxdata/telegraf",
+      "stars": 17872,
+      "url": "https://github.com/influxdata/telegraf",
+      "prs": [
+        {
+          "title": "update nsq input plugin to be compatible with latest version 1.0.0-co…",
+          "url": "https://github.com/influxdata/telegraf/pull/3148",
+          "merged": "2017-08-26"
+        }
+      ]
+    },
+    {
+      "description": "Automatically generate RESTful API documentation with Swagger 2.0 for Go.",
+      "repo": "swaggo/swag",
+      "stars": 13051,
+      "url": "https://github.com/swaggo/swag",
+      "prs": [
+        {
+          "title": "remove panic in favor of printed warning",
+          "url": "https://github.com/swaggo/swag/pull/210",
+          "merged": "2018-09-26"
+        }
+      ]
+    },
+    {
+      "description": "A popular .NET validation library for building strongly-typed validation rules.",
+      "repo": "FluentValidation/FluentValidation",
+      "stars": 9765,
+      "url": "https://github.com/FluentValidation/FluentValidation",
+      "prs": [
+        {
+          "title": "initial with severity option feature implementation as per discussed …",
+          "url": "https://github.com/FluentValidation/FluentValidation/pull/227",
+          "merged": "2016-03-14"
+        }
+      ]
+    },
+    {
+      "description": "A distributed MQTT message broker based on Erlang/OTP. Built for high quality & Industrial use cases. The VerneMQ mission is active & the project maintained. Thank you for your support!",
+      "repo": "vernemq/vernemq",
+      "stars": 3641,
+      "url": "https://github.com/vernemq/vernemq",
+      "prs": [
+        {
+          "title": "make internode cluster readiness check parallel",
+          "url": "https://github.com/vernemq/vernemq/pull/2483",
+          "merged": "2026-04-22"
+        },
+        {
+          "title": "fix incr_socket_close() when clients are rapid connecting/disconnecting",
+          "url": "https://github.com/vernemq/vernemq/pull/2476",
+          "merged": "2026-03-25"
+        },
+        {
+          "title": "Update default rule for all clients",
+          "url": "https://github.com/vernemq/vernemq/pull/2271",
+          "merged": "2024-03-19"
+        }
+      ]
+    },
+    {
+      "description": "☔️ A complete Go cache library that brings you multiple ways of managing your caches",
+      "repo": "eko/gocache",
+      "stars": 2888,
+      "url": "https://github.com/eko/gocache",
+      "prs": [
+        {
+          "title": "add standard not found error",
+          "url": "https://github.com/eko/gocache/pull/142",
+          "merged": "2022-06-14"
+        },
+        {
+          "title": "chain set to run set on all cache stores",
+          "url": "https://github.com/eko/gocache/pull/146",
+          "merged": "2022-06-10"
+        }
+      ]
+    },
+    {
+      "description": "Curated list of MQTT brokers, clients, tools, resources and more.",
+      "repo": "awesome-mqtt/awesome-mqtt",
+      "stars": 2408,
+      "url": "https://github.com/awesome-mqtt/awesome-mqtt",
+      "prs": [
+        {
+          "title": "Add mqttv5 to the GoLang clients",
+          "url": "https://github.com/awesome-mqtt/awesome-mqtt/pull/171",
+          "merged": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "description": "AWS ECS terraform module",
+      "repo": "arminc/terraform-ecs",
+      "stars": 810,
+      "url": "https://github.com/arminc/terraform-ecs",
+      "prs": [
+        {
+          "title": "alb resource renam https -≥ http",
+          "url": "https://github.com/arminc/terraform-ecs/pull/22",
+          "merged": "2020-06-03"
+        }
+      ]
+    },
+    {
+      "description": "CSI Driver for Amazon EFS https://aws.amazon.com/efs/",
+      "repo": "kubernetes-sigs/aws-efs-csi-driver",
+      "stars": 805,
+      "url": "https://github.com/kubernetes-sigs/aws-efs-csi-driver",
+      "prs": [
+        {
+          "title": "update kube dependencies to 1.22.1 and aws-sdk to 1.40.29",
+          "url": "https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/542",
+          "merged": "2021-09-20"
+        }
+      ]
+    },
+    {
+      "description": "Lightweight MQTT benchmark tool written in Erlang",
+      "repo": "emqx/emqtt-bench",
+      "stars": 568,
+      "url": "https://github.com/emqx/emqtt-bench",
+      "prs": [
+        {
+          "title": "Add more histogram buckets",
+          "url": "https://github.com/emqx/emqtt-bench/pull/281",
+          "merged": "2025-02-06"
+        },
+        {
+          "title": "socoket -> socket",
+          "url": "https://github.com/emqx/emqtt-bench/pull/271",
+          "merged": "2024-12-01"
+        }
+      ]
+    },
+    {
+      "description": "Trimmed down {{mustache}} templates in .NET",
+      "repo": "StubbleOrg/Stubble",
+      "stars": 452,
+      "url": "https://github.com/StubbleOrg/Stubble",
+      "prs": [
+        {
+          "title": "Update config docs",
+          "url": "https://github.com/StubbleOrg/Stubble/pull/71",
+          "merged": "2019-08-31"
+        }
+      ]
+    },
+    {
+      "description": "Resource Query Language for REST",
+      "repo": "a8m/rql",
+      "stars": 367,
+      "url": "https://github.com/a8m/rql",
+      "prs": [
+        {
+          "title": "expose ParseQuery to parse query struct",
+          "url": "https://github.com/a8m/rql/pull/17",
+          "merged": "2019-08-01"
+        },
+        {
+          "title": "add default sort functionality",
+          "url": "https://github.com/a8m/rql/pull/15",
+          "merged": "2019-07-19"
+        }
+      ]
+    },
+    {
+      "description": "Script and create SQL Server objects quickly",
+      "repo": "sethreno/schemazen",
+      "stars": 354,
+      "url": "https://github.com/sethreno/schemazen",
+      "prs": [
+        {
+          "title": "Implementing C# 6.0 Features for readability.",
+          "url": "https://github.com/sethreno/schemazen/pull/115",
+          "merged": "2017-01-28"
+        }
+      ]
+    },
+    {
+      "description": "Twilio library for Go (golang).",
+      "repo": "sfreiberg/gotwilio",
+      "stars": 343,
+      "url": "https://github.com/sfreiberg/gotwilio",
+      "prs": [
+        {
+          "title": "add initial go build workflow",
+          "url": "https://github.com/sfreiberg/gotwilio/pull/99",
+          "merged": "2021-10-30"
+        }
+      ]
+    },
+    {
+      "description": "A redis module, similar to redis hash, but you can set expiration and version for field.",
+      "repo": "tair-opensource/TairHash",
+      "stars": 248,
+      "url": "https://github.com/tair-opensource/TairHash",
+      "prs": [
+        {
+          "title": "add exhgetallwithver",
+          "url": "https://github.com/tair-opensource/TairHash/pull/29",
+          "merged": "2022-06-16"
+        }
+      ]
+    },
+    {
+      "description": "auto adjust your GOGC value",
+      "repo": "cch123/gogctuner",
+      "stars": 231,
+      "url": "https://github.com/cch123/gogctuner",
+      "prs": [
+        {
+          "title": "only adjust gc value if its changed, cleanup logs, disable debug logs…",
+          "url": "https://github.com/cch123/gogctuner/pull/10",
+          "merged": "2022-06-04"
+        },
+        {
+          "title": "extract goGC func and add basic tests",
+          "url": "https://github.com/cch123/gogctuner/pull/9",
+          "merged": "2022-06-02"
+        },
+        {
+          "title": "Add logger option and tests",
+          "url": "https://github.com/cch123/gogctuner/pull/7",
+          "merged": "2022-05-27"
+        }
+      ]
+    },
+    {
+      "description": "VerneMQ Docker image - Starts the VerneMQ MQTT broker and listens on 1883 and 8080 (for websockets).",
+      "repo": "vernemq/docker-vernemq",
+      "stars": 184,
+      "url": "https://github.com/vernemq/docker-vernemq",
+      "prs": [
+        {
+          "title": "add auto port config to vernemq.sh",
+          "url": "https://github.com/vernemq/docker-vernemq/pull/382",
+          "merged": "2024-04-28"
+        },
+        {
+          "title": "add support for custom ports on the headless service",
+          "url": "https://github.com/vernemq/docker-vernemq/pull/380",
+          "merged": "2024-04-28"
+        },
+        {
+          "title": "update headless service to expose more ports",
+          "url": "https://github.com/vernemq/docker-vernemq/pull/336",
+          "merged": "2023-06-12"
+        }
+      ]
+    },
+    {
+      "description": "| Public |  A repository of step templates and other community-contributed extensions to Octopus Deploy",
+      "repo": "OctopusDeploy/Library",
+      "stars": 183,
+      "url": "https://github.com/OctopusDeploy/Library",
+      "prs": [
+        {
+          "title": "Adding option to adjust what recycle events are logged",
+          "url": "https://github.com/OctopusDeploy/Library/pull/405",
+          "merged": "2016-11-04"
+        },
+        {
+          "title": "iis-app-create - Correcting bug caused by Environment variables not expanding",
+          "url": "https://github.com/OctopusDeploy/Library/pull/337",
+          "merged": "2016-06-20"
+        }
+      ]
+    },
+    {
+      "description": "Kubernetes CSI driver for TrueNAS Scale",
+      "repo": "fenio/tns-csi",
+      "stars": 132,
+      "url": "https://github.com/fenio/tns-csi",
+      "prs": [
+        {
+          "title": "Add xfsprogs-extra to Dockerfile dependencies",
+          "url": "https://github.com/fenio/tns-csi/pull/144",
+          "merged": "2026-05-16"
+        },
+        {
+          "title": "add vol sector size detection",
+          "url": "https://github.com/fenio/tns-csi/pull/138",
+          "merged": "2026-03-20"
+        },
+        {
+          "title": "Make NVMe-oF discovery command optional",
+          "url": "https://github.com/fenio/tns-csi/pull/130",
+          "merged": "2026-02-26"
+        }
+      ]
+    },
+    {
+      "description": "OpenAPI Spec SDK and Converter for OpenAPI 3.0 and 2.0 Specs to Postman 2.0 Collections. Example RingCentral spec included.",
+      "repo": "grokify/spectrum",
+      "stars": 117,
+      "url": "https://github.com/grokify/spectrum",
+      "prs": [
+        {
+          "title": "fixing consumes vs produces header issue",
+          "url": "https://github.com/grokify/spectrum/pull/3",
+          "merged": "2017-09-26"
+        }
+      ]
+    },
+    {
+      "description": "NuGet package server powered by Lucene.Net.Linq",
+      "repo": "themotleyfool/NuGet.Lucene",
+      "stars": 62,
+      "url": "https://github.com/themotleyfool/NuGet.Lucene",
+      "prs": [
+        {
+          "title": "Updating source mapping variables based on issue",
+          "url": "https://github.com/themotleyfool/NuGet.Lucene/pull/45",
+          "merged": "2016-11-03"
+        }
+      ]
+    },
+    {
+      "description": "Drone plugin for triggering Rancher deployments",
+      "repo": "josmo/drone-rancher",
+      "stars": 53,
+      "url": "https://github.com/josmo/drone-rancher",
+      "prs": [
+        {
+          "title": "add `for rancher 1.x only` in initial summary so its clear.",
+          "url": "https://github.com/josmo/drone-rancher/pull/39",
+          "merged": "2020-11-05"
+        }
+      ]
+    },
+    {
+      "description": "Woodpecker CI Helm Charts",
+      "repo": "woodpecker-ci/helm",
+      "stars": 48,
+      "url": "https://github.com/woodpecker-ci/helm",
+      "prs": [
+        {
+          "title": "fix woodpecker_server to work out of the box",
+          "url": "https://github.com/woodpecker-ci/helm/pull/75",
+          "merged": "2023-09-07"
+        }
+      ]
+    },
+    {
+      "description": "Terraform module to ease deployment of the AWS ALB Ingress Controller",
+      "repo": "GSA/terraform-kubernetes-aws-load-balancer-controller",
+      "stars": 23,
+      "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller",
+      "prs": [
+        {
+          "title": "add passthrough variables to chart",
+          "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/16",
+          "merged": "2022-02-03"
+        },
+        {
+          "title": "add destroy command to remove crds",
+          "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/15",
+          "merged": "2021-10-06"
+        },
+        {
+          "title": "update chart version",
+          "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/14",
+          "merged": "2021-10-06"
+        },
+        {
+          "title": "Add target_type to target group binding and option to pass 'hostNetowork' option through",
+          "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/8",
+          "merged": "2021-07-13"
+        },
+        {
+          "title": "Make cr customizable and allow multiple target groups",
+          "url": "https://github.com/GSA/terraform-kubernetes-aws-load-balancer-controller/pull/7",
+          "merged": "2021-05-26"
+        }
+      ]
+    },
+    {
+      "description": "Collection of Helm charts that developed by the BeeInventor.",
+      "repo": "BeeInventor/charts",
+      "stars": 10,
+      "url": "https://github.com/BeeInventor/charts",
+      "prs": [
+        {
+          "title": "add extraEnv arg to nsqd statefulset",
+          "url": "https://github.com/BeeInventor/charts/pull/21",
+          "merged": "2022-03-22"
+        },
+        {
+          "title": "Create .gitignore",
+          "url": "https://github.com/BeeInventor/charts/pull/13",
+          "merged": "2021-08-25"
+        },
+        {
+          "title": "add missing docs, priority class, missing extra args",
+          "url": "https://github.com/BeeInventor/charts/pull/7",
+          "merged": "2021-08-24"
+        },
+        {
+          "title": "add nsqd",
+          "url": "https://github.com/BeeInventor/charts/pull/2",
+          "merged": "2021-08-02"
+        }
+      ]
+    },
+    {
+      "description": "Unofficial Terraform module to create Cloudflare records for setting up FastMail.",
+      "repo": "bluk/terraform-cloudflare-fastmail-dns",
+      "stars": 4,
+      "url": "https://github.com/bluk/terraform-cloudflare-fastmail-dns",
+      "prs": [
+        {
+          "title": "Remove adsp, client_smtp, add dmarc, fix _srv bug",
+          "url": "https://github.com/bluk/terraform-cloudflare-fastmail-dns/pull/1",
+          "merged": "2020-12-11"
+        }
+      ]
+    }
+  ]
+}

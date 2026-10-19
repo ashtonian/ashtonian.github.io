@@ -1,0 +1,7 @@
+{{- /* Returns {prs, projects} for the shown contributions, so every page quotes the same numbers. */ -}}
+{{- $projects := partial "upstream-projects.html" . }}
+{{- $prs := 0 }}
+{{- range $projects }}
+  {{- $prs = add $prs (len .prs) }}
+{{- end }}
+{{- return dict "prs" $prs "projects" (len $projects) }}

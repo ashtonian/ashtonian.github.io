@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{{ partial "title.html" . }}
+{{- $description := or .Params.summary site.Params.description }}
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<meta property="og:type" content="{{ if .IsHome }}profile{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="theme-color" content="#f7f9f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1315" media="(prefers-color-scheme: dark)">
+{{- if ne hugo.Environment "artifact" }}
+{{- range where site.Params.fonts "preload" true }}
+<link rel="preload" as="font" type="font/woff2" crossorigin href="{{ (resources.Get .file | fingerprint).RelPermalink }}">
+{{- end }}
+{{- end }}
+{{ partial "styles.html" . }}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" site.Title
+  "url" site.Home.Permalink
+  "description" site.Params.description
+  "sameAs" (slice site.Params.github site.Params.linkedin)
+  | jsonify | safeJS }}
+</script>
+{{- end }}
